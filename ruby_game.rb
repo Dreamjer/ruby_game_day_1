@@ -11,14 +11,19 @@
 #
 #puts "------------"
 
-posl,posc = 2 , 5
-for line in (1..5)
-	for col in (1..5)
-		if posl == line && posc == col
-			print "P "
-		else
-			print "X "
+def draw(posl,posc)
+	for line in (1..5)
+		for col in (1..5)
+			if posl == line && posc == col
+				print "P "
+			else
+				print "X "
+			end
 		end
+		print "\n"
 	end
-	print "\n"
 end
+
+# Main 
+
+draw 5 , 1

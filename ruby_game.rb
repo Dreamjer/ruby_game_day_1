@@ -15,6 +15,6 @@ end
 
 # Main 
 
-hero = Player.new("P",4,4)
+hero = Player.new("P",2,4)
 
 draw(hero)

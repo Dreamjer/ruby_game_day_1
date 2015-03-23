@@ -1,4 +1,4 @@
-require_relative player
+require_relative "player"
 
 def draw(joueur)
 	(1..5).each do |line|

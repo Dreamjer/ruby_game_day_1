@@ -9,8 +9,11 @@ while ligne < 6
 	ligne += 1
 end
 
-#puts "------------"
+puts "------------"
 
-#for line in (1..5)
-#	puts "X " *5
-#end
+for line in (1..5)
+	for col in (1..5)
+		print "X "
+	end
+	print "\n"
+end

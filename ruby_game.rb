@@ -18,3 +18,10 @@ end
 hero = Player.new("P",2,4)
 
 draw(hero)
+
+puts "-------------"
+
+hero.ligne = 1
+hero.colone = 5
+
+draw(hero)

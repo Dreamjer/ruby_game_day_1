@@ -12,11 +12,11 @@
 #puts "------------"
 
 
-def draw(posl,posc)
+def draw(joueur)
 (1..5).each do |line|
 		(1..5).each do |col|
-			if posl == line && posc == col
-				print "P "
+			if line == joueur.ligne && col == joueur.colone
+				print joueur.nom+" "
 			else
 				print "X "
 			end
@@ -25,6 +25,25 @@ def draw(posl,posc)
 	end
 end
 
+class Player
+	def initialize(nom,ligne,colone)
+		@nom = nom
+		@ligne = ligne
+		@colone = colone
+	end
+  def nom
+  	@nom
+	end
+	def ligne
+  	@ligne
+	end
+	def colone
+  	@colone
+	end
+end
+
 # Main 
 
-draw 4 , 1
+hero = Player.new("P",4,4)
+
+draw(hero)

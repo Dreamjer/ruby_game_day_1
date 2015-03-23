@@ -11,19 +11,20 @@
 #
 #puts "------------"
 
+
 def draw(posl,posc)
-	for line in (1..5)
-		for col in (1..5)
+(1..5).each do |line|
+		(1..5).each do |col|
 			if posl == line && posc == col
 				print "P "
 			else
 				print "X "
 			end
-		end
+		end	
 		print "\n"
 	end
 end
 
 # Main 
 
-draw 5 , 1
+draw 4 , 1

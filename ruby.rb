@@ -1,0 +1,2 @@
+class Ruby < StaticObject
+end

@@ -1,7 +1,5 @@
-class Player
-	attr_accessor :nom , :ligne , :colone
-	def initialize(nom,ligne,colone)
-		@nom = nom
+class Player < StaticObject
+	def move(ligne,colone)
 		@ligne = ligne
 		@colone = colone
 	end

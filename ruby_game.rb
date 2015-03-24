@@ -2,9 +2,9 @@ require_relative "static_object"
 require_relative "player"
 require_relative "ruby"
 
-def draw(joueur,ruby)
-	(1..5).each do |line|
-		(1..5).each do |col|
+def draw(joueur,ruby,long,larg)
+	(1..long).each do |line|
+		(1..larg).each do |col|
 			if    line == joueur.ligne && col == joueur.colone
 				print joueur.nom+" "
 			elsif line == ruby.ligne && col == ruby.colone
@@ -22,11 +22,11 @@ end
 cible = Ruby.new("R",2,4)
 hero = Player.new("P",1,1)
 
-draw(hero,cible)
+draw(hero,cible,10,10)
 
 puts "-------------"
 
 hero.move(5,3)
 
-draw(hero,cible)
+draw(hero,cible,10,10)
 

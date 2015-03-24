@@ -5,7 +5,7 @@ require_relative "ruby"
 def draw(joueur,ruby)
 	(1..5).each do |line|
 		(1..5).each do |col|
-			if line == joueur.ligne && col == joueur.colone
+			if    line == joueur.ligne && col == joueur.colone
 				print joueur.nom+" "
 			elsif line == ruby.ligne && col == ruby.colone
 				print ruby.nom+" "
